@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCINFO
+    </title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="container">
+    <div class="container1">
+        <h1>calcul du salaire</h1>
+        <form action="">  
+         <label for="nht">nombre de heure travaille </label>
+        <input type="text" id="nht"><br>
+        <label for="th">taux horaire</label>
+        <input type="text" id="th"><br>
+        <label for="pr">prime</label>
+        <input type="text" id="pr"><br>
+        <input type="button" value="calculer" onclick = "calculer()" ><br>
+     <marquee behavior="" direction="">
+         <h3 id="s"></h3>
+     </marquee>
+        </form>
+     </div> 
+     <div class="container2">
+        <img src="image/22.webp" alt="" width="100%">
+     </div>
+
+</div>
+
+
+
+
+
+
+
+   
+</body>
+</html>
+<script>
+    function calculer() {
+        var nht =parseFloat (document.getElementById('nht').value)
+        var th =parseFloat (document.getElementById('th').value)
+        var pr =parseFloat (document.getElementById('pr').value)
+        var s = nht * th + pr
+       document.getElementById('s').innerHTML="le salaire net est :"+s+" MAD"
+        
+    }
+</script>

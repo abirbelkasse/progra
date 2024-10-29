@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(175, 175, 213);
+    width: 90%;
+    margin: auto;
+    text-transform: capitalize;
+ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+
+
+}
+
+
+h1{
+background-color: black;
+color: beige;
+padding: 10px;
+}
+form{
+    padding: 30px;
+
+}
+input[type=text]{
+    width: 100%;
+    padding: 7px;
+    margin: 7px 0;
+}
+input[type=button]{
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: black;
+     color: beige;
+     border: none;
+
+
+}
